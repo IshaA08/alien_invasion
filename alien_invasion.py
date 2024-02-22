@@ -129,6 +129,11 @@ class AlienInvasion:
             self.bullets, self.aliens, False, True
         )
 
+        # Create a new fleet if the current one has been destroyed
+        if not self.aliens:
+            self.bullets.empty()
+            self._create_fleet()
+
     def _update_screen(self):
         """Update the images on the screen then flip to the new screen"""
         self.screen.fill(self.settings.bg_color)
