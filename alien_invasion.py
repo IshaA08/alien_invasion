@@ -65,6 +65,7 @@ class AlienInvasion:
             self.stats.reset_stats()
             self.stats.game_active = True
             self.sb.prep_score()
+            self.sb.prep_level()
 
             # Get rid of any remaining aliens and bullets
             self.aliens.empty()
@@ -209,11 +210,16 @@ class AlienInvasion:
             self.sb.prep_score()
             self.sb.check_high_score()
 
-        # Create a new fleet if the current one has been destroyed
+        # React if the current level is completed
         if not self.aliens:
+            # Destroy bullets, create new fleet
             self.bullets.empty()
             self._create_fleet()
             self.settings.increase_speed()
+
+            # Increase level
+            self.stats.level += 1
+            self.sb.prep_level()
 
     def _update_screen(self):
         """Update the images on the screen then flip to the new screen"""
