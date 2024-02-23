@@ -34,6 +34,7 @@ class Settings:
         self.bullet_speed = 2.0
         self.alien_speed = 0.5
         self.fleet_direction = 1
+        self.alien_points = 50
 
     def increase_speed(self):
         """Increase speed settings"""
