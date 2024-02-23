@@ -28,9 +28,9 @@ The game will end when all player lives are done.
 ## Credits
 The Python Crash Course, 3rd Edition textbook written by Eric
 Matthes was referred to when developing this game,
-specifically from the Section II - Projects section.
+specifically the Section II - Projects chapters.
 
-Matthes, E. (2023). Python Crash Course, 3rd Edition: A Hands-On, Project-Based Introduction to Programming. No Starch Press.
+Matthes, E. (2023). *Python Crash Course, 3rd Edition: A Hands-On, Project-Based Introduction to Programming*. No Starch Press.
 
 ## License
 MIT License
