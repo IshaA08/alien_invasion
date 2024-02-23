@@ -5,11 +5,11 @@ class Settings:
         # Screen settings
         self.screen_width = 1200
         self.screen_height = 600
-        self.bg_color = (230, 230, 230)
+        self.bg_color = (207, 220, 227)
 
         # Ship settings
         self.ship_speed = 1.5
-        self.ship_limit = 3
+        self.ship_limit = 2
 
         # Alien settings
         self.alien_speed = 1
@@ -18,11 +18,11 @@ class Settings:
         self.score_scale = 1.3
 
         # Bullet settings
-        self.bullet_speed = 2.0
+        self.bullet_speed = 5.0
         self.bullets_allowed = 3
         self.bullet_width = 3
         self.bullet_height = 15
-        self.bullet_color = (60, 60, 60)
+        self.bullet_color = (43, 19, 13)
 
         # Game speed-up settings
         self.speedup_scale = 1.3
